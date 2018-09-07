@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <link rel="shortcut icon" href="img/house.png" type="image/jpg" />
+    <link rel="icon" href="img/house.png" type="image/jpg" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/bigsearch.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/help.js"></script>
+    <script src="js/text.js"></script>
+
+  </head>
+  <body onload="updateTime();splitWords();" >
+    <video autoplay muted loop id="background-image">
+      <source src="video/wall.mp4" type="video/mp4">
+    </video>
+    <div id="help" class="help input-color">
+        <table border="0" align="center" cellspacing="30px">
+            <caption>COMANDS</caption>
+            <tr>
+              <td>google     </td><td>    - g:</td>
+              <td>duckduckgo </td><td>  - ddg:</td>
+              <td>wikipedia  </td><td>    - w:</td>
+              <td>youtube    </td><td>   - yt:</td>
+            </tr>
+            <tr>
+              <td>reddit     </td><td>    - r:</td>
+              <td>habrahabr  </td><td> - habr:</td>
+              <td>deviantart </td><td>   - da:</td>
+              <td>lurkmore   </td><td> - lurk:</td>
+            </tr>
+            <tr>
+              <td>myshows    </td><td>   - ms:</td>
+              <td>rutraker   </td><td>   - rt:</td>
+              <td>rutor      </td><td> - rtor:</td>
+            </tr>
+           </table>
+    </div>
+    <div class="clock" id="time"></div>
+    <div class="clock" id="hellow_text_div">
+      <q id="hellow_text">Welcome to web.</q>
+    </div>
+    
+    <div id="big-search-div" class="big-search-div">
+      <input type="text" 
+          id="big-search" 
+          class="big-search input-color"
+          autocapitalize="off" 
+          autocomplete="off" 
+          autocorrect="off" 
+          spellcheck="false" 
+          placeholder="" 
+          onkeypress="return search(event)">
+      </input>
+    </div>
+  </body>
+</html>
