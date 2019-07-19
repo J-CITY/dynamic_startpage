@@ -92,6 +92,14 @@ input 	{
   padding: 10px
 }
 
+.weather {
+  top:25%;
+  left: 80px;
+  position: fixed;
+  padding: 10px;
+  width: 150px;
+}
+
 #hellow_text_div {
   color: #fff;
   font-family: Georgia, serif;
