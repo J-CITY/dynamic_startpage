@@ -1,8 +1,8 @@
 var isBigSearch = false;
 
 addEventListener("keydown", function(event) {
-    if (event.keyCode == 113)
-        bigSearch(113);
+    if (event.ctrlKey && event.keyCode === 32)
+        bigSearch();
 });
 
 function bigSearch() {

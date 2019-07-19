@@ -1,7 +1,7 @@
 var isHelp = false;
 
 addEventListener("keydown", function(event) {
-    if (event.keyCode == 115)
+    if (event.ctrlKey && event.altKey)
         helper();
 });
 
