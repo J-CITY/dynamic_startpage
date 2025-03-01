@@ -1,4 +1,4 @@
-# mini_startpage
+# Dynamic startpage with slideshow or video background
 
 Ctrl + Space - for search
 Ctrl + Alt   - for help
